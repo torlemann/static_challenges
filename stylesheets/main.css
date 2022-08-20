@@ -1,5 +1,4 @@
 .item1 { grid-area: header; }
-.item2 { grid-area: nav; }
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
@@ -8,17 +7,64 @@
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'nav nav nav nav nav nav'
     'main main main main right right'
     'footer footer footer footer footer footer';
   gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  background-color: #ffffff;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
   text-align: center;
-  padding: 20px 0;
+  padding: 0px;
   font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin: 0px;
 }
+
+#header {
+    background-color: rgb(174, 0, 0);
+    margin: 0px;
+    text-align: right;
+    padding: 20px 0;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+
+  #nav {
+    background-color: rgb(66, 66, 66);
+    margin: 0px;
+    text-align: right;
+    padding: 20px 0;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+
+  #main {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  #attractions {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  #footer {
+    background-color: rgb(55, 55, 55);
+    text-align: right;
+    padding: 20px 0;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
